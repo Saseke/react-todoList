@@ -15,6 +15,7 @@ class Item extends React.Component {
         onHandleDeleteRecord: PropTypes.func.isRequired
     };
 
+
     componentWillReceiveProps(nextProps) {
         alert("item update");
         if (nextProps.record.text !== this.state.text) {
